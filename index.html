@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Apps — Clingy Bear</title>
+<meta name="description" content="Every app published by Clingy Bear. Pick one and play." />
+<style>
+  :root {
+    --pink: #ff5fa2;
+    --pink-dark: #e0447c;
+    --ink: #2b2230;
+    --muted: #8a7f8f;
+    --card: #ffffff;
+    --bg: #fff7fb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  header {
+    text-align: center;
+    padding: 56px 20px 28px;
+  }
+  header .bear { font-size: 64px; }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-top: 8px;
+  }
+  h1 .accent { color: var(--pink); }
+  header p { color: var(--muted); margin-top: 10px; font-size: 1.05rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 18px;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 12px 20px 60px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 24px 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 12px rgba(255, 95, 162, 0.08);
+    border: 1px solid #fbe3ef;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(255, 95, 162, 0.18);
+  }
+  .card .icon { font-size: 40px; }
+  .card .name { font-weight: 700; font-size: 1.1rem; }
+  .card .desc { color: var(--muted); font-size: 0.9rem; line-height: 1.45; flex: 1; }
+  .card .url { color: var(--pink-dark); font-size: 0.82rem; font-weight: 600; }
+  .section-label {
+    max-width: 1080px;
+    margin: 18px auto 2px;
+    padding: 0 20px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+  }
+  footer {
+    text-align: center;
+    padding: 24px 20px 40px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--pink-dark); text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+<header>
+  <div class="bear">🐨</div>
+  <h1>Clingy Bear <span class="accent">Apps</span></h1>
+  <p>Everything I've shipped. Pick one and play.</p>
+</header>
+
+<div class="section-label">Flagship</div>
+<div class="grid">
+  <a class="card" href="https://mindthevine.ai">
+    <div class="icon">🍇</div>
+    <div class="name">Mind the Vine</div>
+    <div class="desc">Smart vineyard management — sensors, irrigation, tasks, harvest and an AI copilot.</div>
+    <div class="url">mindthevine.ai</div>
+  </a>
+  <a class="card" href="https://www.aivineyardproject.com">
+    <div class="icon">🌱</div>
+    <div class="name">AI Vineyard Project</div>
+    <div class="desc">Growing wine grapes with AI — follow the journey from planting to bottle.</div>
+    <div class="url">aivineyardproject.com</div>
+  </a>
+  <a class="card" href="https://clingybear.com">
+    <div class="icon">🐨</div>
+    <div class="name">Clingy Bear</div>
+    <div class="desc">Home base — the bear, the merch, the chaos.</div>
+    <div class="url">clingybear.com</div>
+  </a>
+</div>
+
+<div class="section-label">Mind &amp; Learning</div>
+<div class="grid">
+  <a class="card" href="https://neurospicy.clingybear.com">
+    <div class="icon">🧠</div>
+    <div class="name">NeuroSpicy Hub</div>
+    <div class="desc">AuDHD self-reflection tools and resources for spicy brains.</div>
+    <div class="url">neurospicy.clingybear.com</div>
+  </a>
+  <a class="card" href="https://clingybear.com/spectrum">
+    <div class="icon">🌈</div>
+    <div class="name">NeuroSpicy Spectrum</div>
+    <div class="desc">The 64-question deep assessment with consistency checking.</div>
+    <div class="url">clingybear.com/spectrum</div>
+  </a>
+  <a class="card" href="https://audhd.clingybear.com">
+    <div class="icon">🌀</div>
+    <div class="name">AuDHD Hub</div>
+    <div class="desc">Living at the intersection of autism and ADHD.</div>
+    <div class="url">audhd.clingybear.com</div>
+  </a>
+  <a class="card" href="https://fly.clingybear.com">
+    <div class="icon">✈️</div>
+    <div class="name">Ground School Trainer</div>
+    <div class="desc">Private pilot ground school — study, drill, and track your progress.</div>
+    <div class="url">fly.clingybear.com</div>
+  </a>
+  <a class="card" href="https://paramedic-med-math-trainer.vercel.app">
+    <div class="icon">🚑</div>
+    <div class="name">Paramedic Med Math Trainer</div>
+    <div class="desc">Drug calculation drills for paramedic students.</div>
+    <div class="url">paramedic-med-math-trainer.vercel.app</div>
+  </a>
+</div>
+
+<div class="section-label">Health &amp; Daily</div>
+<div class="grid">
+  <a class="card" href="https://macro.clingybear.com">
+    <div class="icon">🥩</div>
+    <div class="name">Macro Tracker</div>
+    <div class="desc">Protein-first macro tracking with food and recipe builder.</div>
+    <div class="url">macro.clingybear.com</div>
+  </a>
+  <a class="card" href="https://raise.clingybear.com">
+    <div class="icon">🐣</div>
+    <div class="name">Raise</div>
+    <div class="desc">Cradle — a Tamagotchi-style AI companion to raise.</div>
+    <div class="url">raise.clingybear.com</div>
+  </a>
+  <a class="card" href="https://msg.clingybear.com">
+    <div class="icon">💬</div>
+    <div class="name">Msg</div>
+    <div class="desc">Mesh messaging client.</div>
+    <div class="url">msg.clingybear.com</div>
+  </a>
+</div>
+
+<div class="section-label">Games &amp; Fun</div>
+<div class="grid">
+  <a class="card" href="https://24legs.com">
+    <div class="icon">🎲</div>
+    <div class="name">24 Legs</div>
+    <div class="desc">Card &amp; board games, websites, music and side hustles.</div>
+    <div class="url">24legs.com</div>
+  </a>
+  <a class="card" href="https://cowpotato.com">
+    <div class="icon">🐄</div>
+    <div class="name">CowPotato</div>
+    <div class="desc">MooShooter — the cow potato game.</div>
+    <div class="url">cowpotato.com</div>
+  </a>
+  <a class="card" href="https://powermonger-web.vercel.app">
+    <div class="icon">⚔️</div>
+    <div class="name">PowerMonger</div>
+    <div class="desc">A PowerMonger-inspired web game.</div>
+    <div class="url">powermonger-web.vercel.app</div>
+  </a>
+  <a class="card" href="https://carnival.clingybear.com">
+    <div class="icon">🎰</div>
+    <div class="name">Carnival Casino Cruise Finder</div>
+    <div class="desc">Find Carnival cruises with the best casino deals.</div>
+    <div class="url">carnival.clingybear.com</div>
+  </a>
+</div>
+
+<div class="section-label">Tools &amp; Business</div>
+<div class="grid">
+  <a class="card" href="https://uniunisucks.com">
+    <div class="icon">📦</div>
+    <div class="name">UniUni Sucks</div>
+    <div class="desc">UniUni delivery tracker and hold-music hell documentation.</div>
+    <div class="url">uniunisucks.com</div>
+  </a>
+  <a class="card" href="https://westernmineralrights.com">
+    <div class="icon">⛏️</div>
+    <div class="name">Western Mineral Rights</div>
+    <div class="desc">Mineral rights in the American West.</div>
+    <div class="url">westernmineralrights.com</div>
+  </a>
+  <a class="card" href="https://streammark.vercel.app">
+    <div class="icon">🔖</div>
+    <div class="name">StreamMark</div>
+    <div class="desc">Bookmark your streams.</div>
+    <div class="url">streammark.vercel.app</div>
+  </a>
+</div>
+
+<footer>
+  Made with 🐨 by <a href="https://clingybear.com">Clingy Bear</a>
+</footer>
+</body>
+</html>
